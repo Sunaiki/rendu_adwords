@@ -7,6 +7,36 @@ body {
 .element {
   position: relative;
   float: left;
+}
+
+.text {
+  position: relative;
+  float: left;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-2 p {
+  margin-bottom: 1em;
+}
+
+._button {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 2;
+  width: 12%;
+  height: 47px;
+  margin: 95px 0 0 16.56641%;
+  border-radius: 3px;
+  background-color: rgb(100, 40, 40);
+  font-family: Montserrat;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(216, 216, 216);
+}
+
+.element-1 {
   z-index: 0;
   width: 69.6%;
   height: 219px;
@@ -15,30 +45,35 @@ body {
   background-color: #3c3c3c;
 }
 
-.text {
-  position: relative;
-  float: left;
+.element-2 {
+  z-index: 3;
+  width: 8.4%;
+  min-width: 101px;
+  max-width: 101px;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  margin: 95px 0 0 22%;
+  border-radius: 50px;
+  background: url('../images/Signa-cartoon.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: left top;
+}
+
+.text-1 {
   clear: both;
   z-index: 1;
   width: 18.8%;
   min-height: 75px;
   margin: -131px 0 0 41%;
-  font-size: 1em;
-  color: rgb(0, 0, 0);
 }
 
-._button {
-  display: block;
-  float: left;
-  width: 12%;
-  height: 47px;
-  margin: 95px 0 0 78%;
-  border-radius: 3px;
-  background-color: rgb(100, 40, 40);
-  font-family: Montserrat;
-  font-size: 1em;
-  text-align: center;
-  color: rgb(216, 216, 216);
+.text-2 {
+  z-index: 4;
+  width: 28.8%;
+  min-height: 142px;
+  margin: 95px 0 0 2.19922%;
 }
 
 .text span {
@@ -61,9 +96,43 @@ body {
   text-decoration: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  color: #f3eded;
   opacity: 1;
   word-break: normal;
   word-wrap: normal;
   white-space: normal;
+}
+
+.text strong {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: #ca2929;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.text-1 span {
+  color: #f3eded;
+}
+
+.text-2 span {
+  color: #3c3c3c;
 }
