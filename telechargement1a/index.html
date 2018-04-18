@@ -13,6 +13,34 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+
+
+		<!-- Global site tag (gtag.js) - Google AdWords: 854339679 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-854339679"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'AW-854339679');
+		</script>
+		<!-- Event snippet for Install conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+		<script>
+			function gtag_report_conversion(url) {
+	  		var callback = function () {
+			if (typeof(url) != 'undefined') {
+		  	window.location = url;
+			}
+	  	};
+	  	gtag('event', 'conversion', {
+		  'send_to': 'AW-854339679/-yYjCOnj2IABEN_gsJcD',
+		  'event_callback': callback
+	  	});
+	  	return false;
+	}
+	</script>
 	</head>
 	<body>
 		<!-- Intro -->
@@ -67,7 +95,7 @@
 					<header>
 						<h2>N'attendez plus</h2>
 					</header>
-					<input type="submit" value="Téléchargez votre Skate Pal'" />
+					<input onclick="gtag_report_conversion()" type="submit" value="Téléchargez votre Skate Pal'" />
 				</div>
 			</section>
 
